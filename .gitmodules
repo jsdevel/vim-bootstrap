@@ -9,10 +9,10 @@
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
+	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
-	url = git://github.com/digitaltoad/vim-jade.git
+	url = https://github.com/digitaltoad/vim-jade.git
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
-	url = git://github.com/elzr/vim-json.git
+	url = https://github.com/elzr/vim-json.git

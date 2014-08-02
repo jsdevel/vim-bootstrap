@@ -16,3 +16,6 @@
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
+[submodule "bundle/vim-spun"]
+	path = bundle/vim-spun
+	url = https://github.com/spunjs/vim-spun.git

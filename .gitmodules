@@ -19,3 +19,6 @@
 [submodule "bundle/vim-spun"]
 	path = bundle/vim-spun
 	url = https://github.com/spunjs/vim-spun.git
+[submodule "bundle/vim-node"]
+	path = bundle/vim-node
+	url = https://github.com/moll/vim-node.git

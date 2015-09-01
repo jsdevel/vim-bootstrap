@@ -1,0 +1,21 @@
+snippet ngprovider
+(function() {
+	'use strict';
+
+	angular
+		.module('${1:module}')
+		.provider('${2:provider}', $2Provider);
+
+	/* @ngInject */
+	function $2Provider(${3:dependencies}) {
+		this.$get = $$2Factory;
+
+		////////////////
+
+		/* @ngInject */
+		function $2Factory(${4:provider arguments}) {
+			$0
+		}
+	}
+})();
+endsnippet

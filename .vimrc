@@ -130,6 +130,7 @@ endfunction
 
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 autocmd BufNewFile,BufRead *.json set ft=json
+autocmd BufNewFile,BufRead *.wsdl set ft=xml
 
 "plugin configuration
 let g:syntastic_always_populate_loc_list=0

@@ -13,6 +13,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'elzr/vim-json'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'vim-scripts/openscad.vim'
 
 call vundle#end()
 filetype plugin indent on

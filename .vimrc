@@ -130,7 +130,7 @@ function! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+"autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 autocmd BufNewFile,BufRead *.json set ft=json
 autocmd BufNewFile,BufRead *.wsdl set ft=xml
 

@@ -50,6 +50,10 @@ snippet edelete "express DELETE"
 ${1:app}.delete('${2}', ${3});
 endsnippet
 
+snippet euse "app.use();"
+app.use($0);
+endsnippet
+
 # process snippets
 
 snippet stdout "stdout"
@@ -64,3 +68,10 @@ snippet stderr "stderr"
 process.stderr
 endsnippet
 
+snippet args "arguments"
+arguments
+endsnippet
+
+snippet log "console.log(msg);"
+console.log($1);$0
+endsnippet

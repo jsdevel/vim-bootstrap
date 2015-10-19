@@ -14,6 +14,7 @@ Plugin 'elzr/vim-json'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'vim-scripts/openscad.vim'
+Plugin 'digitaltoad/vim-jade'
 
 call vundle#end()
 filetype plugin indent on
@@ -33,6 +34,7 @@ set shiftwidth=2
 set tabstop=2
 set lbr
 set tw=500
+set backspace=indent,eol,start
 
 set ai "Auto indent
 set si "Smart indent

@@ -64,7 +64,7 @@ noremap <leader>c :let @/ = ""<CR>
 noremap <leader>e :call ToggleErrors()<CR>
 noremap <leader>f :tab split<CR>
 noremap <leader>F :tabc<CR>
-noremap <leader>g :rightb wincmd f<CR>
+noremap <leader>g :GitGutterToggle<CR>
 noremap <leader>G :abo wincmd f<CR>
 noremap <leader>l <C-w>>
 noremap <leader>h <C-w><
@@ -75,6 +75,7 @@ noremap <leader>p :call HandlePasteSetting()<CR>
 noremap <leader>q :q<CR>
 noremap <leader>s :wa<CR>
 noremap <leader>t :call TidyFoo()<CR>
+noremap <leader>v :source ~/.vimrc<CR>
 noremap <leader>z :call SaveAndSuspend()<CR>
 noremap <leader>x :xa <CR>
 
@@ -132,7 +133,7 @@ function! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 
-"autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 autocmd BufNewFile,BufRead *.json set ft=json
 autocmd BufNewFile,BufRead *.wsdl set ft=xml
 

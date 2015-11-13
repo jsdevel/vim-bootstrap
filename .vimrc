@@ -71,6 +71,7 @@ noremap <leader>l <C-w>>
 noremap <leader>h <C-w><
 noremap <leader>j <C-w>-
 noremap <leader>k <C-w>+
+noremap <leader>m :call HandleMouseSetting()<CR>
 noremap <leader>n :call HandleNumberSetting()<CR>
 noremap <leader>p :call HandlePasteSetting()<CR>
 noremap <leader>q :q<CR>
@@ -83,6 +84,14 @@ noremap <leader>x :xa <CR>
 function! SaveAndSuspend()
   :wa
   :sus
+endfunction
+
+function! HandleMouseSetting()
+  if &mouse == "a"
+    set mouse=""
+  else
+    set mouse=a
+  endif
 endfunction
 
 function! HandleNumberSetting()

@@ -40,6 +40,7 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+set mouse=a
 
 set number
 set updatetime=1200

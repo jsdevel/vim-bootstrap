@@ -70,6 +70,7 @@ noremap <leader>G :abo wincmd f<CR>
 noremap <leader>l <C-w>>
 noremap <leader>h <C-w><
 noremap <leader>j <C-w>-
+noremap <leader>l :silent %!xmllint --format '  ' --nowarning -<CR>
 noremap <leader>k <C-w>+
 noremap <leader>m :call HandleMouseSetting()<CR>
 noremap <leader>n :call HandleNumberSetting()<CR>

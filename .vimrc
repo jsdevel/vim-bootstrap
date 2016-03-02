@@ -48,6 +48,8 @@ set updatetime=1200
 set nopaste
 set colorcolumn=85
 set background=dark
+set completeopt=menu,menuone
+set completeopt-=preview
 let mapleader=','
 
 "Key Mapping

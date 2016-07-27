@@ -80,6 +80,7 @@ noremap <leader>m :call HandleMouseSetting()<CR>
 noremap <leader>n :call HandleNumberSetting()<CR>
 noremap <leader>p :call HandlePasteSetting()<CR>
 noremap <leader>q :q<CR>
+noremap <leader>Q :qa<CR>
 noremap <leader>s :wa<CR>
 noremap <leader>t :call TidyFoo()<CR>
 noremap <leader>v :source ~/.vimrc<CR>

@@ -17,6 +17,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'vim-scripts/openscad.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -86,6 +87,7 @@ noremap <leader>t :call TidyFoo()<CR>
 noremap <leader>v :source ~/.vimrc<CR>
 noremap <leader>z :call SaveAndSuspend()<CR>
 noremap <leader>x :xa <CR>
+noremap <leader>/ :CtrlPMixed <CR>
 
 function! SaveAndSuspend()
   :wa
@@ -153,6 +155,7 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 autocmd BufNewFile,BufRead *.json set ft=json
 autocmd BufNewFile,BufRead *.wsdl set ft=xml
 
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0

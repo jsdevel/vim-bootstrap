@@ -38,6 +38,7 @@ set tabstop=2
 set lbr
 set tw=500
 set backspace=indent,eol,start
+set tags=.tags
 
 set ai "Auto indent
 set si "Smart indent
@@ -87,6 +88,7 @@ noremap <leader>t :call TidyFoo()<CR>
 noremap <leader>v :source ~/.vimrc<CR>
 noremap <leader>z :call SaveAndSuspend()<CR>
 noremap <leader>x :xa <CR>
+noremap <leader>. :CtrlPTag<cr>
 noremap <leader>/ :CtrlPMixed <CR>
 
 function! SaveAndSuspend()
@@ -178,8 +180,9 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
-let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
-let g:ycm_complete_in_comments = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_complete_in_comments = 1
+let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
+let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
 let g:ycm_seed_identifiers_with_syntax = 1

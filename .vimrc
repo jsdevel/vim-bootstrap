@@ -18,6 +18,7 @@ Plugin 'vim-scripts/openscad.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on
@@ -44,7 +45,7 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
-set mouse=a
+"set mouse=a
 
 set number
 set updatetime=1200

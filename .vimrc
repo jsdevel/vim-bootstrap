@@ -19,6 +19,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fatih/vim-go'
+Plugin 'smerrill/vcl-vim-plugin'
 
 call vundle#end()
 filetype plugin indent on

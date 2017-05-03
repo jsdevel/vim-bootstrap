@@ -20,6 +20,7 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'smerrill/vcl-vim-plugin'
+Plugin '907th/vim-auto-save'
 
 call vundle#end()
 filetype plugin indent on
@@ -92,6 +93,7 @@ noremap <leader>z :call SaveAndSuspend()<CR>
 noremap <leader>x :xa <CR>
 noremap <leader>. :CtrlPTag<cr>
 noremap <leader>/ :CtrlPMixed <CR>
+noremap <leader> <C-v>
 
 function! SaveAndSuspend()
   :wa
@@ -162,10 +164,16 @@ autocmd BufNewFile,BufRead *.wsdl set ft=xml
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
+let g:syntastic_javascript_eslint_args = '--ignore-path .eslintignore'
 let g:syntastic_json_checkers = ['jsonlint']
+let g:auto_save = 1
+let g:auto_save_silent = 1
+let g:auto_save_write_all_buffers = 1
+let g:auto_save_events = ["InsertChange", "TextChanged", "BufLeave"]
 
 "plugin configuration
 "let g:syntastic_ignore_files = ['.\+\.json$']
@@ -185,6 +193,7 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_complete_in_comments = 1
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
 let g:ycm_seed_identifiers_with_syntax = 1

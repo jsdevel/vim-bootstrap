@@ -41,7 +41,7 @@ set tabstop=2
 set lbr
 set tw=500
 set backspace=indent,eol,start
-set tags=.tags
+set tags=tags,.tags
 
 set ai "Auto indent
 set si "Smart indent
@@ -57,6 +57,14 @@ set background=dark
 set completeopt=menu,menuone
 set completeopt-=preview
 let mapleader=','
+
+if isdirectory('./include')
+  set path+=./include
+endif
+
+if isdirectory('../include')
+  set path+=../include
+endif
 
 "Key Mapping
 noremap <C-n> :NERDTree<CR>
@@ -164,6 +172,10 @@ autocmd BufNewFile,BufRead *.wsdl set ft=xml
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
+let g:syntastic_c_checkers = ['gcc']
+let g:syntastic_c_compiler = 'gcc'
+let g:syntastic_c_compiler_options = ''
+let g:syntastic_c_include_dirs = [ '../include', 'include' ]
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
@@ -193,7 +205,7 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_complete_in_comments = 1
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
 let g:ycm_seed_identifiers_with_syntax = 1

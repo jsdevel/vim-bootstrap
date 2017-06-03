@@ -52,6 +52,7 @@ flags = [
 # For a C project, you would set this to something like 'c99' instead of
 # 'c++11'.
 '-std=c99',
+'-D_POSIX_C_SOURCE=200112L',
 # ...and the same thing goes for the magic -x option which specifies the
 # language that the files to be compiled are written in. This is mostly
 # relevant for c++ headers.
@@ -74,6 +75,12 @@ flags = [
 './include',
 '-I',
 '../include',
+'-I',
+'/usr/include',
+'-I',
+'./src',
+'-I',
+'../src',
 '-I',
 './ClangCompleter',
 '-isystem',

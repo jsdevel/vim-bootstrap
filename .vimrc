@@ -61,9 +61,15 @@ let mapleader=','
 if isdirectory('./include')
   set path+=./include
 endif
+if isdirectory('./src')
+  set path+=./src
+endif
 
 if isdirectory('../include')
   set path+=../include
+endif
+if isdirectory('../src')
+  set path+=../src
 endif
 
 "Key Mapping
@@ -174,8 +180,8 @@ let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_c_checkers = ['gcc']
 let g:syntastic_c_compiler = 'gcc'
-let g:syntastic_c_compiler_options = ''
-let g:syntastic_c_include_dirs = [ '../include', 'include' ]
+let g:syntastic_c_compiler_options = '-D_POSIX_C_SOURCE=200112L'
+let g:syntastic_c_include_dirs = [ '../include', 'include', '/usr/include' ]
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']

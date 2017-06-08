@@ -42,7 +42,10 @@ set lbr
 set tw=500
 set backspace=indent,eol,start
 set tags=tags,.tags
-
+set foldmethod=syntax
+set foldnestmax=1
+set foldopen-=block
+highlight Folded ctermbg=none
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines

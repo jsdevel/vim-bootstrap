@@ -42,7 +42,7 @@ set lbr
 set tw=500
 set backspace=indent,eol,start
 set tags=tags,.tags
-set foldmethod=syntax
+set foldmethod=indent
 set foldnestmax=1
 set foldopen-=block
 highlight Folded ctermbg=none

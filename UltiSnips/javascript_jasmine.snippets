@@ -4,13 +4,31 @@ priority -50
 # for jasmine-jquery matchers
 #
 
-snippet des "Describe (js)" b
+snippet des "Describe (js) => {...}" b
+describe('${1:description}', () => {
+	$0
+});
+endsnippet
+
+snippet it "it (js) => {...}" b
+it('${1:description}', () => {
+	$0
+});
+endsnippet
+
+snippet itp "it (js) => promise" b
+it('${1:description}', () => {
+	$0
+});
+endsnippet
+
+snippet des5 "Describe (js es5)" b
 describe('${1:description}', function() {
 	$0
 });
 endsnippet
 
-snippet it "it (js)" b
+snippet it5 "it (js es5)" b
 it('${1:description}', function() {
 	$0
 });

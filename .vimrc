@@ -177,6 +177,8 @@ endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 autocmd BufNewFile,BufRead *.json set ft=json
 autocmd BufNewFile,BufRead *.wsdl set ft=xml
+autocmd InsertLeave,WinEnter * setlocal foldmethod=indent
+autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 0

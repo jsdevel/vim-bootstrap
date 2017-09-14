@@ -182,7 +182,7 @@ autocmd BufNewFile,BufRead *.wsdl set ft=xml
 autocmd InsertLeave,WinEnter * setlocal foldmethod=indent
 autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 
-" let g:csv_autocmd_arrange = 1
+let g:airline#extensions#csv#column_display = 'Name'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0

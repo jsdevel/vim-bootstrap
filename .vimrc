@@ -64,10 +64,10 @@ set completeopt-=preview
 let mapleader=','
 
 if isdirectory('./include')
-  set path+=./include
+  set path+=include
 endif
 if isdirectory('./src')
-  set path+=./src
+  set path+=src
 endif
 
 if isdirectory('../include')

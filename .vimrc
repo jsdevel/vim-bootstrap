@@ -20,9 +20,10 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'smerrill/vcl-vim-plugin'
-Plugin '907th/vim-auto-save'
+"Plugin '907th/vim-auto-save'
 Plugin 'chrisbra/csv.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 filetype plugin indent on
@@ -46,6 +47,7 @@ set backspace=indent,eol,start
 set tags=tags,.tags
 set foldmethod=indent
 set foldnestmax=1
+set foldlevelstart=20
 set foldopen-=block
 highlight Folded ctermbg=none
 set ai "Auto indent

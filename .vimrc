@@ -23,7 +23,7 @@ Plugin 'smerrill/vcl-vim-plugin'
 "Plugin '907th/vim-auto-save'
 Plugin 'chrisbra/csv.vim'
 Plugin 'vim-airline/vim-airline'
-Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 filetype plugin indent on

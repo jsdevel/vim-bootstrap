@@ -198,6 +198,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 let g:syntastic_javascript_eslint_args = '--ignore-path .eslintignore'
 let g:syntastic_json_checkers = ['jsonlint']
+let g:syntastic_typescript_checkers = ['tslint']
 let g:auto_save = 1
 let g:auto_save_silent = 1
 let g:auto_save_write_all_buffers = 1

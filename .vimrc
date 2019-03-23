@@ -14,7 +14,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'elzr/vim-json'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'vim-scripts/openscad.vim'
+Plugin 'sirtaj/vim-openscad'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -24,6 +24,8 @@ Plugin 'smerrill/vcl-vim-plugin'
 Plugin 'chrisbra/csv.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-surround'
+Plugin 'sudar/vim-arduino-syntax'
+Plugin 'sudar/vim-arduino-snippets'
 
 call vundle#end()
 filetype plugin indent on
@@ -198,7 +200,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 let g:syntastic_javascript_eslint_args = '--ignore-path .eslintignore'
 let g:syntastic_json_checkers = ['jsonlint']
-let g:syntastic_typescript_checkers = ['tslint']
+let g:syntastic_typescript_checkers = ['tslint', 'tsc']
 let g:auto_save = 1
 let g:auto_save_silent = 1
 let g:auto_save_write_all_buffers = 1

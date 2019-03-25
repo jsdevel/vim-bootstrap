@@ -83,6 +83,7 @@ endif
 
 "Key Mapping
 noremap <C-n> :NERDTree<CR>
+noremap <C-f> :NERDTreeFind<CR>
 
 noremap <C-Right> <C-w>H
 noremap <C-Down> <C-w>J

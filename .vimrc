@@ -26,6 +26,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-surround'
 Plugin 'sudar/vim-arduino-syntax'
 Plugin 'sudar/vim-arduino-snippets'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -100,10 +101,10 @@ noremap <leader>f :tab split<CR>
 noremap <leader>F :tabc<CR>
 noremap <leader>g :GitGutterToggle<CR>
 noremap <leader>G :abo wincmd f<CR>
-noremap <leader>l <C-w>>
-noremap <leader>h <C-w><
+noremap <leader>l <C-w>5>
+noremap <leader>h <C-w>5<
 noremap <leader>j <C-w>-
-noremap <leader>l :silent %!xmllint --format '  ' --nowarning -<CR>
+noremap <leader>L :silent %!xmllint --format '  ' --nowarning -<CR>
 noremap <leader>k <C-w>+
 noremap <leader>m :call HandleMouseSetting()<CR>
 noremap <leader>n :call HandleNumberSetting()<CR>

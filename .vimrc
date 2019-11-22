@@ -5,6 +5,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -27,6 +29,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'sudar/vim-arduino-syntax'
 Plugin 'sudar/vim-arduino-snippets'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'jparise/vim-graphql'
 
 call vundle#end()
 filetype plugin indent on
@@ -200,7 +203,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
-let g:syntastic_javascript_eslint_args = '--ignore-path .eslintignore'
+let g:syntastic_javascript_eslint_args = '--ignore-path .eslintignore --fix'
 let g:syntastic_json_checkers = ['jsonlint']
 let g:syntastic_typescript_checkers = ['tslint', 'tsc']
 let g:auto_save = 1

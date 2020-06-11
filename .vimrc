@@ -56,6 +56,7 @@ set foldnestmax=1
 set foldlevelstart=20
 set foldopen-=block
 highlight Folded ctermbg=none
+highlight SignColumn ctermbg=none
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines

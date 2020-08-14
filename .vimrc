@@ -30,6 +30,7 @@ Plugin 'sudar/vim-arduino-syntax'
 Plugin 'sudar/vim-arduino-snippets'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'jparise/vim-graphql'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
@@ -99,11 +100,14 @@ noremap <C-h> <C-w><C-h>
 noremap <C-j> <C-w><C-j>
 noremap <C-k> <C-w><C-k>
 noremap <C-l> <C-w><C-l>
+noremap <leader>b :Git blame<CR>
 noremap <leader>c :let @/ = ""<CR>
 noremap <leader>e :call ToggleErrors()<CR>
 noremap <leader>f :tab split<CR>
 noremap <leader>F :tabc<CR>
 noremap <leader>g :GitGutterToggle<CR>
+noremap <leader>J :GitGutterNextHunk<CR>
+noremap <leader>K :GitGutterPrevHunk<CR>
 noremap <leader>G :abo wincmd f<CR>
 noremap <leader>l <C-w>5>
 noremap <leader>h <C-w>5<

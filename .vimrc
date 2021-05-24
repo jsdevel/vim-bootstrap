@@ -31,6 +31,7 @@ Plugin 'sudar/vim-arduino-snippets'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'jparise/vim-graphql'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tell-k/vim-autopep8'
 
 call vundle#end()
 filetype plugin indent on
@@ -197,6 +198,8 @@ autocmd InsertLeave,WinEnter * setlocal foldmethod=indent
 autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 
 let g:airline#extensions#csv#column_display = 'Name'
+let g:autopep8_disable_show_diff=1
+let g:autopep8_on_save = 1
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0

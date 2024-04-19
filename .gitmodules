@@ -1,4 +1,75 @@
-[submodule "bundle/Vundle.vim"]
-	path = bundle/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim.git
-  branch = master
+[submodule "pack/github/start/vim-javascript"]
+	path = pack/github/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule "pack/github/start/vim-jsx"]
+	path = pack/github/start/vim-jsx
+	url = https://github.com/mxw/vim-jsx
+[submodule "pack/github/start/nerdtree"]
+	path = pack/github/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "pack/github/start/syntastic"]
+	path = pack/github/start/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "pack/github/start/vim-gitgutter"]
+	path = pack/github/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "pack/github/start/ultisnips"]
+	path = pack/github/start/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "pack/github/start/vim-snippets"]
+	path = pack/github/start/vim-snippets
+	url = https://github.com/honza/vim-snippets
+[submodule "pack/github/start/vim-json"]
+	path = pack/github/start/vim-json
+	url = https://github.com/elzr/vim-json
+[submodule "pack/github/start/YouCompleteMe"]
+	path = pack/github/start/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "pack/github/start/typescript-vim"]
+	path = pack/github/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim
+[submodule "pack/github/start/vim-openscad"]
+	path = pack/github/start/vim-openscad
+	url = https://github.com/sirtaj/vim-openscad
+[submodule "pack/github/start/vim-jade"]
+	path = pack/github/start/vim-jade
+	url = https://github.com/digitaltoad/vim-jade
+[submodule "pack/github/start/vim-instant-markdown"]
+	path = pack/github/start/vim-instant-markdown
+	url = https://github.com/suan/vim-instant-markdown
+[submodule "pack/github/start/ctrlp.vim"]
+	path = pack/github/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "pack/github/start/vim-go"]
+	path = pack/github/start/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "pack/github/start/vcl-vim-plugin"]
+	path = pack/github/start/vcl-vim-plugin
+	url = https://github.com/smerrill/vcl-vim-plugin
+[submodule "pack/github/start/csv.vim"]
+	path = pack/github/start/csv.vim
+	url = https://github.com/chrisbra/csv.vim
+[submodule "pack/github/start/vim-airline"]
+	path = pack/github/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/github/start/vim-surround"]
+	path = pack/github/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "pack/github/start/vim-arduino-syntax"]
+	path = pack/github/start/vim-arduino-syntax
+	url = https://github.com/sudar/vim-arduino-syntax
+[submodule "pack/github/start/vim-arduino-snippets"]
+	path = pack/github/start/vim-arduino-snippets
+	url = https://github.com/sudar/vim-arduino-snippets
+[submodule "pack/github/start/editorconfig-vim"]
+	path = pack/github/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "pack/github/start/vim-graphql"]
+	path = pack/github/start/vim-graphql
+	url = https://github.com/jparise/vim-graphql
+[submodule "pack/github/start/vim-fugitive"]
+	path = pack/github/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "pack/github/start/vim-terraform"]
+	path = pack/github/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform

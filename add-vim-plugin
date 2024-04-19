@@ -1,0 +1,6 @@
+#!/bin/bash
+
+args=(${1//\// })
+
+pushd $(dirname $0) > /dev/null
+git submodule add https://github.com/${args[0]}/${args[1]}  pack/github/start/${args[1]}

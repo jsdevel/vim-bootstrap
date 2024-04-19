@@ -1,41 +1,7 @@
-"Start Vundle Configuration
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'elzr/vim-json'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'sirtaj/vim-openscad'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'suan/vim-instant-markdown'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'fatih/vim-go'
-Plugin 'smerrill/vcl-vim-plugin'
-"Plugin '907th/vim-auto-save'
-Plugin 'chrisbra/csv.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'tpope/vim-surround'
-Plugin 'sudar/vim-arduino-syntax'
-Plugin 'sudar/vim-arduino-snippets'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'jparise/vim-graphql'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tell-k/vim-autopep8'
-
-call vundle#end()
 filetype plugin indent on
-"End Vundle Configuration
 
 syntax on
 filetype on
@@ -113,7 +79,7 @@ noremap <leader>G :abo wincmd f<CR>
 noremap <leader>l <C-w>5>
 noremap <leader>h <C-w>5<
 noremap <leader>j <C-w>-
-noremap <leader>L :silent %!xmllint --format '  ' --nowarning -<CR>
+"noremap <leader>L :silent %!xmllint --format '  ' --nowarning -<CR>
 noremap <leader>k <C-w>+
 noremap <leader>m :call HandleMouseSetting()<CR>
 noremap <leader>n :call HandleNumberSetting()<CR>
@@ -198,8 +164,8 @@ autocmd InsertLeave,WinEnter * setlocal foldmethod=indent
 autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 
 let g:airline#extensions#csv#column_display = 'Name'
-let g:autopep8_disable_show_diff=1
-let g:autopep8_on_save = 1
+"let g:autopep8_disable_show_diff=1
+"let g:autopep8_on_save = 1
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
@@ -209,11 +175,11 @@ let g:syntastic_c_compiler_options = '-D_POSIX_C_SOURCE=200112L'
 let g:syntastic_c_include_dirs = [ '../include', 'include', '/usr/include' ]
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
+let g:syntastic_filetype_map = {"javascriptreact": "javascript", "typescriptreact": "javascript", "typescript": "javascript"}
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 let g:syntastic_javascript_eslint_args = '--ignore-path .eslintignore --fix'
 let g:syntastic_json_checkers = ['jsonlint']
-let g:syntastic_typescript_checkers = ['tslint', 'tsc']
 let g:auto_save = 1
 let g:auto_save_silent = 1
 let g:auto_save_write_all_buffers = 1
